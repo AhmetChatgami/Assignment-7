@@ -1,0 +1,104 @@
+
+[
+{
+  "id": "#1001",
+  "title": "Login Issues - Can't Access Account",
+  "status": "Open",
+  "priority": "HIGH PRIORITY",
+  "description_snippet": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still...",
+  "assigned_to": "John Smith",
+  "date_created": "1/15/2024"
+}
+,
+
+  {
+    "id": "#1002",
+    "title": "Payment Failed - Card Declined",
+    "status": "Open",
+    "priority": "HIGH PRIORITY",
+    "description_snippet": "Customer attempted to pay using Visa ending 1234 but the payment keeps failing despite sufficient balance.",
+    "assigned_to": "Sarah Johnson",
+    "date_created": "1/16/2024"
+  },
+  {
+    "id": "#1003",
+    "title": "Unable to Download Invoice",
+    "status": "In Progress",
+    "priority": "MEDIUM PRIORITY",
+    "description_snippet": "Customer cannot download their January invoice from the billing section. The download button is...",
+    "assigned_to": "Michael Brown",
+    "date_created": "1/17/2024"
+  },
+  {
+    "id": "#1004",
+    "title": "Incorrect Billing Address",
+    "status": "Open",
+    "priority": "LOW PRIORITY",
+    "description_snippet": "Customer’s billing address shows a different city. They updated it but it still displays the old one.",
+    "assigned_to": "Emily Davis",
+    "date_created": "1/18/2024"
+  },
+  {
+    "id": "#1005",
+    "title": "App Crash on Launch",
+    "status": "Open",
+    "priority": "HIGH PRIORITY",
+    "description_snippet": "Customer reports that the mobile app crashes immediately upon opening on Android 13.",
+    "assigned_to": "David Wilson",
+    "date_created": "1/19/2024"
+  },
+  {
+    "id": "#1006",
+    "title": "Refund Not Processed",
+    "status": "In Progress",
+    "priority": "MEDIUM PRIORITY",
+    "description_snippet": "Customer requested a refund two weeks ago but has not received the amount yet.",
+    "assigned_to": "Sophia Taylor",
+    "date_created": "1/20/2024"
+  },
+  {
+    "id": "#1007",
+    "title": "Two-Factor Authentication Issue",
+    "status": "Open",
+    "priority": "HIGH PRIORITY",
+    "description_snippet": "Customer is not receiving 2FA codes on their registered phone number.",
+    "assigned_to": "James Anderson",
+    "date_created": "1/21/2024"
+  },
+  {
+    "id": "#1008",
+    "title": "Unable to Update Profile Picture",
+    "status": "Open",
+    "priority": "LOW PRIORITY",
+    "description_snippet": "Customer tries to upload a new profile picture but gets 'Upload failed' error.",
+    "assigned_to": "Olivia Martinez",
+    "date_created": "1/22/2024"
+  },
+  {
+    "id": "#1009",
+    "title": "Subscription Auto-Renewal",
+    "status": "In Progress",
+    "priority": "MEDIUM PRIORITY",
+    "description_snippet": "Customer wants to enable auto-renewal for their subscription but the toggle is disabled.",
+    "assigned_to": "Liam Thomas",
+    "date_created": "1/17/2024"
+  },
+  {
+    "id": "#1010",
+    "title": "Missing Order Confirmation Email",
+    "status": "Open",
+    "priority": "MEDIUM PRIORITY",
+    "description_snippet": "Customer placed an order but didn't receive a confirmation email even though payment succeeded.",
+    "assigned_to": "Isabella Garcia",
+    "date_created": "1/24/2024"
+  },
+  {
+    "id": "#1011",
+    "title": "Problem Uploading Large Files",
+    "status": "Open",
+    "priority": "HIGH PRIORITY",
+    "description_snippet": "Upload fails consistently when files exceed 500MB. Smaller files are working fine...",
+    "assigned_to": "Sarah Lee",
+    "date_created": "1/20/2024"
+  }
+]

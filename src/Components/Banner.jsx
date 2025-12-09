@@ -1,8 +1,8 @@
 import React from "react";
-import bgImage from "../assets/vector1.png";
-import bgImage2 from "../assets/vector2.png";
 
-const Banner = () => {
+
+const Banner = ({ticket}) => {
+  
   return (
     <div className="bg-gray-100">
       {/* <div className='max-w-11/12 mx-auto p-4 grid grid-cols-2 items-center space-x-4 justify-center mt-10'>
@@ -18,17 +18,16 @@ const Banner = () => {
                 </div>
             </div> */}
 
-        <div className='max-w-11/12 mx-auto p-4 flex gap-4 grid grid-cols-1 md:grid-cols-2 gap-6 py-12'>
-      <div class="card">
-        <span>In-Progress</span>
-        <span className="text-4xl">0</span>
+      <div className="max-w-11/12 mx-auto p-4 flex gap-4 grid grid-cols-1 md:grid-cols-2 gap-6 py-12">
+        <div class="card">
+          <span>In-Progress</span>
+          <span className="text-4xl">{ticket}</span>
+        </div>
+        <div class="card2">
+          <span>Resolved</span>
+          <span className="text-4xl">0</span>
+        </div>
       </div>
-      <div class="card2">
-        <span>Resolved</span>
-        <span className="text-4xl">0</span>
-      </div>
-      </div>
-
     </div>
   );
 };
