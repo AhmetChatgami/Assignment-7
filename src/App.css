@@ -1,0 +1,58 @@
+@plugin "daisyui";
+
+
+
+.read-the-docs {
+  color: #888;
+}
+
+.card {
+ 
+  height: 230px;
+  border-radius: 4px;
+
+  /* Background gradient + image */
+  background-image:
+    url("./assets/vector1.png"),                 /* your wave pattern */
+    linear-gradient(95deg, #632EE3, #9F62F2);
+    
+
+  background-size: 15;      /* scales the wave image */
+  background-position:left; /* centers it */
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  ;
+}
+
+
+.card2 {
+  
+  height: 230px;
+  border-radius: 4px;
+
+  /* Background gradient + image */
+  background-image:
+    url("./assets/vector1.png"),                 /* your wave pattern */
+    linear-gradient(95deg, #54CF68, #00827A);
+    
+
+  background-size: 15;      /* scales the wave image */
+  background-position:left; /* centers it */
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  ;
+}
