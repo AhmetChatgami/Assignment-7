@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Banner = ({ticket}) => {
+const Banner = ({ticket, totalTicket}) => {
   
   return (
     <div className="bg-gray-100">
@@ -21,7 +21,7 @@ const Banner = ({ticket}) => {
       <div className="max-w-11/12 mx-auto p-4 flex gap-4 grid grid-cols-1 md:grid-cols-2 gap-6 py-12">
         <div class="card">
           <span>In-Progress</span>
-          <span className="text-4xl">{ticket}</span>
+          <span className="text-4xl">{totalTicket}</span>
         </div>
         <div class="card2">
           <span>Resolved</span>

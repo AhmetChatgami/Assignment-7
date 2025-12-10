@@ -7,7 +7,8 @@
   "priority": "HIGH PRIORITY",
   "description_snippet": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still...",
   "assigned_to": "John Smith",
-  "date_created": "1/15/2024"
+  "date_created": "1/15/2024",
+  "color": ""
 }
 ,
 

@@ -1,42 +1,49 @@
-import { UtensilsCrossed } from "lucide-react";
+import { Calendar, UtensilsCrossed } from "lucide-react";
 
-const TicketCard = ({ tickets }) => {
+const TicketCard = ({ tickets , handleTicket }) => {
   // Static data (mock order)
   //   console.log(order);
-// const tickets= {
-//   "id": "#1001",
-//   "title": "Login Issues - Can't Access Account",
-//   "status": "Open",
-//   "priority": "HIGH PRIORITY",
-//   "description_snippet": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still...",
-//   "assigned_to": "John Smith",
-//   "date_created": "1/15/2024"
-// }
+
+ 
   return (
     <div
-      
-      className="p-5 bg-white rounded-xl shadow-xl relative space-y-3"
+      onClick={() => handleTicket(tickets)}
+      className="p-5 mt-8 bg-white rounded shadow-xl relative space-y-3"
     >
-      {/* Ticket Number */}
-      <p className="text-xs bg-amber-400 p-2 inline-block rounded-xl">
-        #{tickets.id}
-      </p>
-
       {/* Title */}
-      <h2 className="text-xl flex items-center gap-2">
-        
-        {tickets.title}
-      </h2>
+      <h2 className="text-xl flex items-center gap-2">{tickets.title}</h2>
 
       {/* Description */}
-      <div className="mt-3 text-xs">
-        <h4 className="text-amber-400 font-bold text-sm">Instruction</h4>
+      <div className="mt-3 text-xs justify-center items-center">
+        <h4 className=""></h4>
         <p>{tickets.description_snippet}</p>
       </div>
 
       {/* Ticket Status */}
       <div className="absolute right-2 top-2 flex justify-center items-center bg-green-400 rounded-xl px-4 opacity-80 text-white">
         {tickets.status}
+      </div>
+
+      <div className="flex justify-between">
+        <div>
+          {/* Ticket Number */}
+          <p className="text-xs text-gray-400 p-2 inline-block rounded-xl">
+            #{tickets.id}
+          </p>
+          <p className="text-xs p-2 text-amber-400 inline-block">
+            {tickets.priority}
+          </p>
+        </div>
+
+        <div className="flex">
+          <p className="text-xs p-2 text-gray-500 inline-block">
+            {tickets.assigned_to}
+          </p>
+          <Calendar />
+          <p className="text-xs p-2 text-gray-500 inline-block">
+            {tickets.date_created}
+          </p>
+        </div>
       </div>
     </div>
   );
