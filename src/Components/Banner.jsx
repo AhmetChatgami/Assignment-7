@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Banner = ({ticket, totalTicket}) => {
+const Banner = ({ticket, totalTicket, totalTask}) => {
   
   return (
     <div className="bg-gray-100">
@@ -25,7 +25,7 @@ const Banner = ({ticket, totalTicket}) => {
         </div>
         <div class="card2">
           <span>Resolved</span>
-          <span className="text-4xl">0</span>
+          <span className="text-4xl">{totalTask}</span>
         </div>
       </div>
     </div>

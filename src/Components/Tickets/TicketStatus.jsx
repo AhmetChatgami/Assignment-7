@@ -1,4 +1,4 @@
-const TicketStatus = ({ ticket, handleTicket }) => {
+const TicketStatus = ({ ticket, handleTaskStatus }) => {
  
   return (
     <div
@@ -24,7 +24,7 @@ const TicketStatus = ({ ticket, handleTicket }) => {
 
       {/* Static Button */}
       <button
-        onClick={() => handleTicket(ticket)}
+        onClick={()=> handleTaskStatus(ticket)}
         className="px-6 mt-3 py-1 shadow text-sm w-full hover:bg-green-800 items-center hover:text-white bg-green-600 cursor-pointer rounded"
       >
         Completed
