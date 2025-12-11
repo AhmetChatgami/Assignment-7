@@ -5,6 +5,7 @@ import Banner from "./Banner";
 import TicketStatus from "./Tickets/TicketStatus";
 import Resolved from "./Tickets/Resolved";
 import { toast } from "react-toastify";
+import Footer from "./Footer";
 
 const TicketContainer = ({ promise }) => {
   
@@ -79,6 +80,10 @@ const TicketContainer = ({ promise }) => {
           </div>
         </div>
       </section>
+
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 };
