@@ -12,5 +12,6 @@ const Resolved = ({ tickets }) => {
   );
 };
 
+// Resolved Task Working
 
 export default Resolved;

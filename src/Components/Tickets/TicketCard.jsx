@@ -1,11 +1,10 @@
 import { Calendar, UtensilsCrossed } from "lucide-react";
 
 const TicketCard = ({ tickets , handleTicket }) => {
-  // Static data (mock order)
-  //   console.log(order);
-
+  
  
   return (
+    
     <div
       onClick={() => handleTicket(tickets)}
       className="p-5 mt-8 bg-white rounded shadow-xl relative space-y-3"

@@ -4,19 +4,24 @@ import TicketCard from "./Tickets/TicketCard";
 import Banner from "./Banner";
 import TicketStatus from "./Tickets/TicketStatus";
 import Resolved from "./Tickets/Resolved";
+import { toast } from "react-toastify";
 
 const TicketContainer = ({ promise }) => {
+  
   const tickets = use(promise);
+
+  const [cards, setCards]=useState(tickets);
 
   const [ticketCards, setTicketCards] = useState([]);
 
   const [taskStatus, setTasktStatus] = useState([]);
 
   const handleTicket = (tickets) => {
+   toast.done("added.")
     const isExist = ticketCards.find((item) => item.id == tickets.id);
 
     if (isExist) {
-      alert("Already Added.");
+      toast.error("Already Added.");
       return;
     }
 
@@ -25,11 +30,15 @@ const TicketContainer = ({ promise }) => {
   };
 
   const handleTaskStatus = (ticket) => {
+    toast.success("Resolved Task")
     const newTaskStatus = [...taskStatus, ticket];
     setTasktStatus(newTaskStatus);
 
     const remaining = ticketCards.filter((item) => item.id !== ticket.id);
     setTicketCards(remaining);
+
+    const remainingCards= cards.filter((cards)=> cards.id!== ticket.id);
+    setCards(remainingCards);
   };
 
   return (
@@ -65,7 +74,7 @@ const TicketContainer = ({ promise }) => {
             ))}
           </div>
           <h2 className="font-semibold text-2xl">Resolved Task</h2>
-          <div className="shadow-xl p-10 px-2 space-y-5 text-sm rounded ">
+          <div className="shadow-xl bg-white p-10 px-2 space-y-5 text-sm rounded ">
             {taskStatus.map(tickets=> <Resolved key={tickets.id} tickets={tickets}></Resolved>)}
           </div>
         </div>

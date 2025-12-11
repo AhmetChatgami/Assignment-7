@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Banner = ({ticket, totalTicket, totalTask}) => {
+const Banner = ({ totalTicket, totalTask}) => {
   
   return (
     <div className="bg-gray-100">
