@@ -6,7 +6,8 @@ const TicketCard = ({ tickets , handleTicket }) => {
   return (
     
     <div
-      onClick={() => handleTicket(tickets)}
+    
+      onClick={() => handleTicket(tickets)} 
       className="p-5 mt-8 bg-white rounded shadow-xl relative space-y-3"
     >
       {/* Title */}
