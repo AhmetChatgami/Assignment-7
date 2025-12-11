@@ -9,10 +9,7 @@ const Footer = () => {
         <div className="space-y-5 col-span-2 md:col-span-1">
           <h2 className="text-xl font-semibold">CS — Ticket System </h2>
           <p className="text-sm align-baseline">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            dolore dicta omnis, saepe porro nemo illo quasi vitae, reprehenderit
-            quisquam quos voluptate adipisci eveniet autem voluptatibus dolorum
-            laboriosam iste rem?
+            Since "CS — Ticket System" is likely a platform for managing customer support issues, events, or service requests, the text should briefly explain what the system does and what value it provides to users or clients.
           </p>
         </div>
 
