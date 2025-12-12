@@ -1,4 +1,4 @@
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 
@@ -6,9 +6,9 @@ import TicketContainer from "./Components/TicketContainer";
 import { ToastContainer } from "react-toastify";
 
 const loadTickets = () =>
-  fetch("/public/tickets.json").then((res) => res.json());
+  fetch("tickets.json").then((res) => res.json());
 function App() {
-  const [count, setCount] = useState(0);
+  
 
   const ticketPromise = loadTickets();
 

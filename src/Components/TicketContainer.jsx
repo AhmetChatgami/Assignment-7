@@ -18,14 +18,7 @@ const TicketContainer = ({ promise }) => {
   const [taskStatus, setTasktStatus] = useState([]);
 
   const handleTicket = (tickets) => {
-   
-    const isExist = ticketCards.find((item) => item.id == tickets.id);
-    
-    if (isExist) {
-      toast.error("Already Added.");
-      return;
-    }
-
+    toast.success("In progess.")
     const newTicketCards = [...ticketCards, tickets];
     setTicketCards(newTicketCards);
     const remainingCards= cards.filter((card)=> card.id!== tickets.id);

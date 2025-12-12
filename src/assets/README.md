@@ -25,6 +25,9 @@
  - How is event handling done in React?
  Ans: Event handling in React is very similar to HTML & JavaScript, but there is a few differences. For event handling we use camelCase for handling like onClick instead of onclick. We pass a function reference as the event handler, not a string onClick={handleClick} instead of onClick="handleClick()".
 
+ 
+ **Kichu kichu answer AI theke help nisi fast assignment submit korar jnno. Laptop er problem er jonno onek piche achi.**
+
 ----
 
 

@@ -8,7 +8,7 @@ const TicketCard = ({ tickets , handleTicket }) => {
     <div
     
       onClick={() => handleTicket(tickets)} 
-      className="p-5 mt-8 bg-white rounded shadow-xl relative space-y-3"
+      className="p-5 mt-8 bg-white rounded shadow-xl relative space-y-3 cursor-pointer"
     >
       {/* Title */}
       <h2 className="text-xl flex items-center gap-2">{tickets.title}</h2>
