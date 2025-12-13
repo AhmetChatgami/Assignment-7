@@ -18,12 +18,14 @@ const Banner = ({ totalTicket, totalTask}) => {
                 </div>
             </div> */}
 
-      <div className="max-w-11/12 mx-auto p-4 flex gap-4 grid grid-cols-1 md:grid-cols-2 gap-6 py-12">
-        <div class="card">
-          <span>In-Progress</span>
+      <div className="max-w-11/12 mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-6 py-6">
+        <div class="my-element rounded-md my-6">
+          <p className="flex flex-col items-center">
+            <span>In-Progress</span>
           <span className="text-4xl">{totalTicket}</span>
+          </p>
         </div>
-        <div class="card2">
+        <div class="card2 my-6">
           <span>Resolved</span>
           <span className="text-4xl">{totalTask}</span>
         </div>
