@@ -25,9 +25,11 @@ const Banner = ({ totalTicket, totalTask}) => {
           <span className="text-4xl">{totalTicket}</span>
           </p>
         </div>
-        <div class="card2 my-6">
-          <span>Resolved</span>
-          <span className="text-4xl">{totalTask}</span>
+        <div class="my-element2 my-6 rounded-md ">
+          <p className="flex flex-col items-center">
+            <span>Resolved</span>
+            <span className="text-4xl">{totalTask}</span>
+          </p>
         </div>
       </div>
     </div>

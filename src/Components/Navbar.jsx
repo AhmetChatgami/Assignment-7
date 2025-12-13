@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between max-w-11/12 mx-auto items-center p-4 mb-5 content-box flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5">
+    <div className="flex justify-between max-w-11/12 mx-auto p-4 mb-5 content-box flex-col lg:flex-row lg:justify-between items-center gap-5">
       <div>
         <h2 className="text-xl font-semibold cursor-pointer">
           CS — Ticket System
